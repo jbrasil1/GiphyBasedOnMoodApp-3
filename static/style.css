@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #fffacd, #ffd700 50%, #ff69b4); /* Gradient from Lemon Chiffon to Gold to Hot Pink for a fun, vibrant feel */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    position: relative; /* To allow pseudo-elements if needed */
+    min-height: 100vh; /* Ensure full viewport height coverage */
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="10" cy="10" r="3" fill="%23ff4500" opacity="0.3"/><circle cx="30" cy="50" r="5" fill="%2390ee90" opacity="0.3"/><circle cx="70" cy="20" r="4" fill="%23ff69b4" opacity="0.3"/><circle cx="50" cy="80" r="6" fill="%23ffd700" opacity="0.3"/><circle cx="90" cy="60" r="3" fill="%2332cd32" opacity="0.3"/></svg>') repeat;
+    z-index: -1; /* Behind content */
+    opacity: 0.2; /* Subtle overlay */
+}
+
+nav {
+    background-color: #ff69b4; /* Hot Pink */
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left; /* Align the button to the left or center as needed */
+}
+
+.home-button {
+    background-color: #90ee90; /* Light Green, matching other buttons */
+    color: #333;
+    padding: 5px 10px; /* Smaller padding for a small button */
+    font-size: 14px; /* Smaller font size */
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* Treat as button */
+}
+
+.home-button:hover {
+    background-color: #32cd32; /* Lime Green on hover */
+}
+
+.main-content {
+    max-width: 600px; /* Constrain width to reduce overall size and center */
+    margin: 0 auto; /* Center the content */
+    padding: 10px; /* Reduced padding */
+}
+
+.main-content h1 {
+    color: #ff4500; /* Orange Red for energy */
+    font-size: 2.5em; /* Slightly smaller than index's 3em */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.main-content h2 {
+    color: #ff4500; /* Orange Red for energy */
+    font-size: 2em; /* Smaller */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.main-content input[type="text"] {
+    padding: 10px; /* Slightly smaller than index's 15px */
+    font-size: 1.2em; /* Smaller */
+    border: 2px solid #90ee90; /* Light Green */
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px; /* Narrower */
+}
+
+.main-content button {
+    background-color: #90ee90; /* Light Green */
+    color: #333;
+    padding: 10px 20px; /* Smaller than index's 15px 30px */
+    font-size: 1.2em; /* Smaller */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.main-content button:hover {
+    background-color: #32cd32; /* Lime Green */
+}
+
+.main-content img {
+    max-width: 400px; /* Reduced from 500px to minimize height/scrolling */
+    max-height: 300px; /* Cap height to prevent tall GIFs from causing scroll */
+    height: auto;
+    border: 5px solid #ffd700; /* Gold */
+    border-radius: 10px;
+    margin: 15px; /* Reduced margin */
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #ff69b4;
+}

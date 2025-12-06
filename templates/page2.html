@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="main-content">
+        <h1>Here's how you wish to feel: {{ wish_mood }} 🎈</h1>
+        <img src="{{ gif_url }}" alt="Wish Mood GIF">
+        <p><a href="/page1"><button>Back to Your Current Mood</button></a></p>
+        <p><a href="/"><button>Back to Home</button></a></p>
+    </div>
+{% endblock %}

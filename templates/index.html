@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="main-content">
+        <h1>How are you feeling today? 😊</h1>
+        <form action="/page1" method="post">
+            <input type="text" name="mood" placeholder="Enter your mood..." required>
+            <button type="submit">Show me a GIF!</button>
+        </form>
+    </div>
+{% endblock %}

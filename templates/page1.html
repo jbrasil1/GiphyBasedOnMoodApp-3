@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="main-content">
+        <h1>Based on your mood: {{ mood }} 🌟</h1>
+        <img src="{{ gif_url }}" alt="Mood GIF">
+        <p><a href="/"><button>Back to Home</button></a></p>
+        <h2>How do you wish you felt? ✨</h2>
+        <form action="/page2" method="post">
+            <input type="text" name="wish_mood" placeholder="Enter your wish mood..." required>
+            <button type="submit">Show me another GIF!</button>
+        </form>
+    </div>
+{% endblock %}
